@@ -15,9 +15,11 @@ public class PlantConfiguration {
 
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
-    private Long configId;
+    private Long id;
 
     private String configName;
+
+    private Long userId;
 
     private double desiredMoistureLevel;
 
@@ -28,4 +30,6 @@ public class PlantConfiguration {
 
     @Enumerated(EnumType.STRING)
     private PotSize potSize;
+
+    private boolean isActive;
 }
